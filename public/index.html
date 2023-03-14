@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+    <!-- Font Icon -->
+    <!-- <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css"> -->
+
+    <!-- Main css -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+<!-- <script src="js/main.js"></script> -->
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+  </body>
+
+  <style>
+
+/* .crd{
+  width:80vh;
+} */
+
+/* .cimg{
+  width:200vh;
+} */
+
+a{
+  text-decoration: none;
+  font-size: 3vh;
+  color: black;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-size: 3vh;
+  color: black;
+}
+
+.navbar {
+  /* width: 250px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* text-align: center; */
+}
+
+.navbar-brand{
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5vh;
+  color: black;
+}
+
+.navbar{
+height: 15vh;
+}
+
+.pad{
+ padding-left: 105vh;
+ padding-right: 4vh;
+}
+
+.pad2{
+ padding: 0vh 4vh;
+}
+
+.pad3{
+ padding-left: 4vh;
+ padding-right: 2vh;
+}
+
+#root{
+  background-image: linear-gradient(to bottom,aqua,rgb(232, 228, 228));
+}
+
+.wid{
+  padding-top: 3vh;
+  width:110vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.blog-pic{
+  padding-top: 3vh;
+  height:70vh;
+}
+
+.foot{
+  /* height:12vh; */
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.abt{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.abt2{
+  margin: 0vh 2vh;
+  font-family:sans-serif;
+}
+
+.pad4{
+  height:100vh;
+}
+
+
+
+.pb {
+      padding: 0px;
+      height:10vh;
+      width:25vh;
+      font-size: 4vh;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      display:block;
+      position:fixed;
+      /* top:2x; */
+      right:0px;
+      bottom: 10vh;
+      text-align:center;
+      background-image: linear-gradient(to bottom,orange,purple);
+    }
+
+a{
+  cursor: pointer;
+}
+
+.Bi{
+  height:50vh;
+  width:50vh;
+  border-radius: 10px;
+}
+
+.bc{
+  width:60vh;
+  background-image: linear-gradient(to bottom,black,white);
+  margin: 1vh 1vh;
+  padding: 1vh 1vh;
+  border-radius: 10px;
+}
+
+.br{
+  justify-content: space-around;
+}
+
+.row{
+  --bs-gutter-x:0;
+}
+
+
+
+.hig{
+  font-size: small;
+  color:rgb(94, 93, 93);
+}
+
+*{
+-webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;}
+
+
+
+
+  </style>
+
+  <script>
+
+    
+   
+
+$(document).on('click','.delbut', function() { 
+  const token=sessionStorage.getItem("token");
+  
+      var url="http://localhost:4000/backend_auth/deletePost/";
+  url+=event.srcElement.value;
+  console.log(url)
+  axios.delete(url,{headers:{"auth-token":token}})
+  .then(data => {alert("Your post is deleted"); window.location.href="/contact"})
+  .catch(error => alert("You don't have rights to delete this post")); 
+});
+
+$(document).on('click','#ep', function() { 
+  const token=sessionStorage.getItem("token");
+
+  var title=document.getElementById("etitle").value
+  var content=document.getElementById("econt").value
+  var img=document.getElementById("eim").value
+
+  var a={}
+
+  if(title){
+    a["title"]=title;
+  }
+  if(content){
+    a["content"]=content;
+  }
+  if(img){
+    a["img"]=img;
+  }
+
+
+  console.log(a)
+      var url="http://localhost:4000/backend_auth/editPost/";
+  url+=event.srcElement.value;
+  console.log(url)
+  axios.patch(url,a,{headers:{"auth-token":token}})
+  .then(data => {alert("Your post is edited"); window.location.href="/contact"})
+  .catch(error => alert("You don't have rights to edit this post")); 
+});
+
+$(document).on('click','.editbut', function() {
+  
+  var p=document.getElementById("ep");
+p.value=event.srcElement.value;
+  $("#eM3").modal('show');
+
+  console.log(p.value)
+
+
+});
+
+
+  </script>
+</html>
